@@ -7,7 +7,7 @@ A python tool to label images for training supervised machine learning models.
 # Relevant Folders
 * ```unlabelled_images```: directory that contains a labelled sub-directory for each tracked subject in the recorded video footage from the Makerspace. Each sub-directory contains images of the subject taken from frames of a video.
      
-     Local File Structure:
+     *Local File Structure:*
      
         <unlabelled_images>/
         ├── <subject1>/
