@@ -110,10 +110,20 @@ for folder in all_folder_names:
 
 print(all_data_df)
 
-# save labeled faces df to local drive
-all_data_df.to_csv(savedir + "/" + "labelled_faces.csv")
+if prev_dataframe_bool == "y":
+	# update labeled faces in local drive
+	all_data_df.to_csv(savedir + "/" + csv_name)
+	saved_filepath = savedir + "/" + csv_name
+
+else:
+	# get name of csv file under which labeled faces will be saved
+	labelled_csv_file_name = input("Under what name would you like to save the csv file containing the labeled images? ")
+
+	# save labeled faces df to local drive
+	all_data_df.to_csv(savedir + "/" + labelled_csv_file_name)
+	saved_filepath = savedir + "/" + labelled_csv_file_name
 
 # print confirmation and csv name
-print('Saved dataframe at ', savedir + '/labelled_faces.csv')
+print('Saved dataframe at ', saved_filepath)
 
 
