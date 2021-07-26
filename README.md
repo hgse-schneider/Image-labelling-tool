@@ -12,16 +12,12 @@ A python tool to label images for training supervised machine learning models.
         <unlabelled_images>/
         ├── <subject1>/
         │   ├── <subject1_image1>.jpeg
-        
         │   ├── <subject1_image2>.jpeg
-        
         │   ├── ...
-        
         ├── <subject2>/
-        
         │   ├── <subject2_image1>.jpeg
-        
         │   └── <subject2_image2>.jpeg
-        
         └── ...
 * labelled_csv_files: directory that contains all labelled csv files (in progress and completed)
+
+# Usage
